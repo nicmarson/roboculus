@@ -1,0 +1,36 @@
+<nav class="nav" id='navmenu' aria-label='{{ i18n "mainMenu" }}'>
+  <div class="nav-left">
+    <a class="nav-item is-brand" href="/">
+      <img class="nav-item_image" src="/images/logo.png" alt="Roboculus">
+      Roboculus
+    </a>
+  </div>
+  <div class="nav-center">
+    <a class="nav-item" href="https://github.com/connectivedx/boboculus">
+      <span class="icon">
+        <i class="fa fa-github"></i>
+      </span>
+    </a>
+    <a class="nav-item" href="https://twitter.com/connectivedx">
+      <span class="icon">
+        <i class="fa fa-twitter"></i>
+      </span>
+    </a>
+  </div>
+  <span id="nav-toggle" class="nav-toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </span>
+  <div id="nav-menu" class="nav-right nav-menu">
+    {{ range .Site.Menus.main }}
+    <a href='{{ .URL }}'
+      {{- if or ( $.IsMenuCurrent "main" . ) ( $.HasMenuCurrent "main" . ) -}}
+        class='nav-item is-active' aria-current='page'
+      {{- else -}}
+        class='nav-item'
+      {{- end -}}
+    >{{- .Name -}}</a>
+    {{end}}
+  </div>
+</nav>

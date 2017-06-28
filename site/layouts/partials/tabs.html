@@ -1,0 +1,10 @@
+<nav class="tabs is-boxed">
+  <ul class="sidebar-menu">
+    {{ $currentNode := . }}
+    {{ range .Site.Menus.main }}
+    <li class="{{if or ($currentNode.IsMenuCurrent "main" .) ($currentNode.HasMenuCurrent "main" .) }} is-active{{end}}">
+      <a class="" href="{{.URL}}">{{ .Name }}</a>
+    </li>
+    {{end}}
+  </ul>
+</nav>

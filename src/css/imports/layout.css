@@ -1,0 +1,74 @@
+.block:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.container {
+  position: relative;
+}
+
+@media screen and (min-width: 1000px) {
+  .container {
+    margin: 0 auto;
+    max-width: 960px;
+    width: 960px;
+  }
+  .container.is-fluid {
+    margin: 0 20px;
+    max-width: none;
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 1192px) {
+  .container {
+    max-width: 1152px;
+    width: 1152px;
+  }
+}
+
+@media screen and (min-width: 1384px) {
+  .container {
+    max-width: 1344px;
+    width: 1344px;
+  }
+}
+
+.section {
+  background-color: white;
+  padding: 3rem 1.5rem;
+}
+
+@media screen and (min-width: 1000px) {
+  .section.is-medium {
+    padding: 9rem 1.5rem;
+  }
+  .section.is-large {
+    padding: 18rem 1.5rem;
+  }
+}
+
+.header {
+  height: 6rem;
+  @media (--large) {
+    height: 8rem;
+  }
+}
+
+.footer {
+  background-color: whitesmoke;
+  padding: 3rem 1.5rem 6rem;
+}
+
+.footer-definition {
+  text-align: center;
+}
+
+.footer-definition pre {
+  padding: 0;
+}
+
+.footer-info {
+  @media (--large) {
+    text-align: right;
+  }
+}

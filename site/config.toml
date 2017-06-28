@@ -1,0 +1,52 @@
+baseurl = "/"
+languageCode = "en-us"
+title = "ConnectiveDX Roboculus"
+summary = "A style guide for the Roboculus build system"
+SectionPagesMenu = "main"
+
+disqusShortname = ""
+googleAnalytics = ""
+Paginate = 5
+
+[Params]
+  Author = "ConnectiveDX"
+  description = "Minimalist theme for Hugo"
+  dateFormat = "2006, Jan 2"
+  copyrightOwner = "MunifTanjim"
+  copyrightStartYear = "2017"
+  favicon = "favicon.ico"
+
+[params.seo]
+  # Title Separator: - – — · • * ⋆ | ~ « » < >
+  titleSeparator = "•"
+
+[params.opengraph]
+  [params.opengraph.facebook]
+    admins = ""
+    appid = ""
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[author]
+  name = "Minimo"
+
+[permalinks]
+  page = "/:slug/"
+
+[[menu.main]]
+  name = "Repo"
+  weight = 200
+  identifier = "repository"
+  url = "https://github.com/connectivedx/fuzzy-chainsaw"
+
+# Language Configuration
+defaultContentLanguage = "en"
+
+[languages]
+  # edit this block for your own language
+  [languages.en]
+    lang = "en"
+    languageName = "English"
+    weight = 1

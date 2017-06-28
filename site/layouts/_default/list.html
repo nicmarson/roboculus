@@ -1,0 +1,27 @@
+{{ partial "header" . }}
+
+<main>
+  <div class="container">
+    <div class="columns">
+      <div class="column is-one-quarter">
+        <aside class="menu">
+          <p class="menu-label">{{ .Title }}</p>
+          {{ partial "sidebar.html" . }}
+        </aside>
+      </div>
+      <div class="column">
+        <section class="section sg-section">
+          <h1 class="title is-1">
+            {{ .Title }}
+          </h1>
+          <p class="title is-4 is-muted">
+            {{ .Description }}
+          </p>
+          {{ .Content }}
+        </section>
+      </div>
+    </div>
+  </div>
+</main>
+
+{{ partial "footer" . }}

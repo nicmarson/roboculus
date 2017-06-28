@@ -1,0 +1,162 @@
+.fa {
+  font-size: 21px;
+  text-align: center;
+  vertical-align: top;
+}
+
+.heading {
+  display: block;
+  font-size: 11px;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.highlight {
+  font-weight: 400;
+  max-width: 100%;
+  overflow: hidden;
+  padding: 0;
+}
+
+.highlight:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.highlight pre {
+  overflow: auto;
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.title,
+.subtitle {
+  word-break: break-word;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.title:not(:last-child),
+.subtitle:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.title em,
+.title span,
+.subtitle em,
+.subtitle span {
+  font-weight: 300;
+}
+
+.title strong,
+.subtitle strong {
+  font-weight: 700;
+}
+
+.title .tag,
+.subtitle .tag {
+  vertical-align: middle;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.title {
+  color: #363636;
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.125;
+}
+
+.title strong {
+  color: inherit;
+}
+
+.title + .highlight {
+  margin-top: -0.75rem;
+}
+
+.title:not(.is-spaced) + .subtitle {
+  margin-top: -1.5rem;
+}
+
+h1,
+.title.is-1 {
+  font-size: 3rem;
+}
+
+h2,
+.title.is-2 {
+  font-size: 2.5rem;
+}
+
+h3,
+.title.is-3 {
+  font-size: 2rem;
+}
+
+h4,
+.title.is-4 {
+  font-size: 1.5rem;
+}
+
+h5,
+.title.is-5 {
+  font-size: 1.25rem;
+}
+
+h6,
+.title.is-6 {
+  font-size: 1rem;
+}
+
+.subtitle {
+  color: #4a4a4a;
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1.25;
+}
+
+.subtitle strong {
+  color: #363636;
+}
+
+.subtitle:not(.is-spaced) + .title {
+  margin-top: -1.5rem;
+}
+
+.subtitle.is-1 {
+  font-size: 3rem;
+}
+
+.subtitle.is-2 {
+  font-size: 2.5rem;
+}
+
+.subtitle.is-3 {
+  font-size: 2rem;
+}
+
+.subtitle.is-4 {
+  font-size: 1.5rem;
+}
+
+.subtitle.is-5 {
+  font-size: 1.25rem;
+}
+
+.subtitle.is-6 {
+  font-size: 1rem;
+}

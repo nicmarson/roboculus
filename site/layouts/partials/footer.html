@@ -1,0 +1,36 @@
+  <footer class="footer">
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+          <p><strong>Roboculus</strong> is a modern <strong>React</strong> based build system</a>.</p>
+          <p>
+            <small>
+              {{ with .Site.Copyright | safeHTML }}{{ . }}{{ else }}&copy; {{ $.Site.LastChange.Year }} {{ if isset $.Site.Params "Author" }}{{ $.Site.Params.Author }}{{ else }}{{ .Site.Title }}{{ end }}{{ end }}
+            </small>
+          </p>
+        </div>
+        <div class="column footer-definition">
+          <pre>
+ro·bo·cu·lus
+a very small robotic creature</pre>
+        </div>
+        <div class="column footer-info">
+          <p id="tsp">
+              Source code licensed <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.
+              <br>
+              Website content licensed <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="/highlight/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <script src="/app.js"></script>
+
+  <script src='{{ print "js/" .Site.Data.assets.main.js | relURL }}'></script>
+  {{ range .Site.Params.customJS }}
+    <script src='{{ . | relURL }}'></script>
+  {{ end }}
+</body>
+</html>

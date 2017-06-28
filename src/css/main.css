@@ -1,0 +1,56 @@
+@import "variables/breakpoints";
+@import "variables/colors";
+@import "variables/custom-selectors";
+@import "variables/fonts";
+@import "variables/type";
+@import "variables/z-index";
+
+@import "imports/reset.css";
+@import "imports/font-awesome.css";
+@import "imports/type.css";
+@import "imports/elements.css";
+@import "imports/highlightjs.css";
+@import "imports/grid.css";
+@import "imports/components.css";
+@import "imports/nav.css";
+@import "imports/hero.css";
+@import "imports/layout.css";
+@import "imports/modifiers.css";
+
+.hero,
+.nav {
+  background-color: transparent;
+}
+
+.hero.is-primary {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+.sg-section {
+  padding: 1.5rem 1.5rem 2rem;
+  @media (--large) {
+    padding: 2.5rem 2.5rem 2.5rem 3rem;
+  }
+  @media (--xlarge) {
+    padding: 5rem 4rem 5rem 8.5rem;
+  }
+}
+
+.sg-section p {
+  line-height: 1.55;
+  margin-bottom: 1.4em;
+  max-width: 60rem;
+}
+
+.sg-section h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.sg-section h3 {
+  color: var(--color-black);
+  font-size: 1rem;
+  letter-spacing: .05rem;
+  text-transform: uppercase;
+}

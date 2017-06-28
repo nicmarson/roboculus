@@ -1,0 +1,382 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>robot disco</title>
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- build:css styles/vendor.css -->
+  <!-- bower:css -->
+  <link rel="stylesheet" href="/bower_components/highlightjs/styles/default.css" />
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+  <!-- build:js scripts/vendor/modernizr.js -->
+  <script src="/bower_components/modernizr/modernizr.js"></script>
+  <!-- endbuild -->
+</head>
+<body class="demo-page">
+<!--[if lt IE 10]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+<section class="hero has-text-centered">
+  <div class="hero-head">
+    <div class="container">
+      <nav class="nav">
+        <div class="nav-left">
+          <a class="nav-item brand" href="">
+            <svg viewBox="0 0 200 200" class="icon brand__icon">
+               <use xlink:href="images/robot-head.svg#robot-head"></use>
+            </svg>
+            <svg viewBox="0 0 138 107" class="icon brand__icon-alt">
+               <use xlink:href="images/robot-face.svg#robot-face"></use>
+            </svg>
+            <span class="brand__label">Robot Disco</span>
+          </a>
+        </div>
+        <div class="nav-center">
+          <a class="nav-item" href="https://github.com/jgthms/bulma">
+            <span class="icon">
+              <i class="fa fa-github"></i>
+            </span>
+          </a>
+          <a class="nav-item" href="https://twitter.com/jgthms">
+            <span class="icon">
+              <i class="fa fa-twitter"></i>
+            </span>
+          </a>
+        </div>
+        <span id="nav-toggle" class="nav-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+        <div id="nav-menu" class="nav-right nav-menu">
+          <a class="nav-item is-active" href="">
+            Home
+          </a>
+          <a class="is-hidden nav-item" href="/templates/">
+            <span>Templates</span>
+            <span class="tag is-small is-success">New!</span>
+          </a>
+          <a class="nav-item  " href="/documentation/overview/start/">
+            Documentation
+          </a>
+          <span class="nav-item">
+            <a id="twitter"
+              class="btn"
+              data-social-network="Twitter"
+              data-social-action="tweet"
+              data-social-target="http://bulma.io"
+              target="_blank"
+              href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&url=http://bulma.io&via=jgthms">
+              <span class="icon">
+                <i class="fa fa-twitter"></i>
+              </span>
+              <span>Tweet</span>
+            </a>
+            <a class="btn is-primary" href="https://github.com/jgthms/bulma/archive/0.3.0.zip">
+              <span class="icon">
+                <i class="fa fa-download"></i>
+              </span>
+              <span>Download</span>
+            </a>
+          </span>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <div class="hero-body">
+    <div class="container">
+      <img class="hero-image" src="images/robot-disco.png"/>
+      <h1 class="title">
+        Beep, Boop!
+      </h1>
+      <h2 id="modern-framework" class="subtitle">
+        <strong>Robot Disco</strong> is a <strong>modern</strong> CSS framework based on <a href="https://github.com/connectivedx/fuzzy-chainsaw"><strong>Fuzzy Chainsaw</strong></a>
+      </h2>
+      <p id="download" class="hero-buttons">
+        <a class="btn is-primary is-large" href="">
+          <span class="icon">
+            <i class="fa fa-download"></i>
+          </span>
+          <span>Download</span>
+          <small>v0.0.1</small>
+        </a>
+        <a class="btn is-large" href="/documentation/overview/start/">
+          View docs
+        </a>
+      </p>
+      <ul class="examples-nav">
+        <li><a href="#brand-section">Brand</a></li>
+        <li><a href="">Button</a></li>
+        <li><a href="">Heading</a></li>
+        <li><a href="">Icon</a></li>
+        <li><a href="">IconSet</a></li>
+        <li><a href="">List</a></li>
+        <li><a href="">Media</a></li>
+        <li><a href="">PlaceholderSvg</a></li>
+        <li><a href="">Rhythm</a></li>
+        <li><a href="">RichText</a></li>
+        <li><a href="">Skeleton</a></li>
+        <li><a href="">Wrapper</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section class="hero is-primary">
+  <div class="hero-body">
+    <div class="container">
+      <nav class="columns">
+        <a class="column has-text-centered" href="http://bulma.io/documentation/overview/responsiveness/">
+          <span class="icon is-large" style="margin-right: -15px;">
+            <i class="fa fa-mobile"></i>
+          </span>
+          <span class="icon is-large">
+            <i class="fa fa-tablet"></i>
+          </span>
+          <span class="icon is-large" style="margin-right: 10px;">
+            <i class="fa fa-desktop"></i>
+          </span>
+          <p class="title is-4"><strong>Responsive</strong></p>
+          <p class="subtitle">Designed for <strong>mobile</strong>-first</p>
+        </a>
+        <a class="column has-text-centered" href="http://bulma.io/documentation/overview/modular/">
+          <span class="icon is-large">
+            <i class="fa fa-cubes"></i>
+          </span>
+          <p class="title is-4"><strong>Modular</strong></p>
+          <p class="subtitle">Just import what you <strong>need</strong></p>
+        </a>
+        <a class="column has-text-centered" href="http://bulma.io/documentation/grid/columns/">
+          <span class="icon is-large">
+            <i class="fa fa-css3"></i>
+          </span>
+          <p class="title is-4"><strong>Modern</strong></p>
+          <p class="subtitle">Built with <strong>Flexbox</strong></p>
+        </a>
+        <a class="column has-text-centered" href="https://github.com/jgthms/bulma">
+          <span class="icon is-large">
+            <i class="fa fa-github"></i>
+          </span>
+          <p class="title is-4"><strong>Free</strong></p>
+          <p class="subtitle">Open source on <strong>GitHub</strong></p>
+        </a>
+      </nav>
+    </div>
+  </div>
+</section>
+<section id="brand-section" class="section is-medium">
+  <div class="container">
+    <h3 class="title is-2">
+      <a href="http://bulma.io/documentation/grid/columns"><strong>Brand</strong></a>
+    </h3>
+    <h4 class="subtitle is-4">The logo or typeface of your identity</h4>
+    <div class="brand">
+      <svg viewBox="0 0 200 200" class="icon brand__icon">
+         <use xlink:href="images/robot-head.svg#robot-head"></use>
+      </svg>
+      <svg viewBox="0 0 138 107" class="icon brand__icon-alt">
+         <use xlink:href="images/robot-face.svg#robot-face"></use>
+      </svg>
+      <span class="brand__label">Robot Disco</span>
+    </div>
+<pre class="highlight"><code class="html">&lt;div class=&quot;brand brand--full&quot;&gt;
+  &lt;svg viewBox=&quot;0 0 200 200&quot; class=&quot;icon brand__icon&quot;&gt;
+    &lt;use xlink:href=&quot;images/robot-head.svg#robot-head&quot;&gt;&lt;/use&gt;
+  &lt;/svg&gt;
+  &lt;span class=&quot;brand__label&quot;&gt;Robot Disco&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+  </div>
+</section>
+<hr class="is-marginless">
+<section class="section is-medium">
+  <div class="container">
+    <div class="columns is-vcentered">
+      <div class="column">
+        <h3 class="title is-2">
+          <a href="http://bulma.io/documentation/modifiers/syntax/">
+            Compose your elements with <strong>modifier</strong> classes
+          </a>
+        </h3>
+        <h4 class="subtitle is-4">Add and combine <code>button--*</code> CSS classes to quickly alter styles</h4>
+      </div>
+      <div class="column">
+        <div class="block">
+          <p class="control">
+            <code>button</code>
+          </p>
+          <a class="button">Button</a>
+        </div>
+        <div class="block">
+          <p class="control">
+            <code>button button--default</code>
+          </p>
+          <a class="button button--default">Button</a>
+        </div>
+        <div class="block">
+          <p class="control">
+            <code>button button--cta</code>
+          </p>
+          <a href="#/" class="button button--cta button--link">Hello World</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<hr class="is-marginless">
+<section class="section is-medium">
+  <div class="container">
+    <h3 class="title is-2">
+      <a href="http://bulma.io/documentation/elements/box/">And all the usual <strong>elements</strong></a>
+    </h3>
+    <h4 class="subtitle is-4">Buttons, form controls, menus, tabs, titles, notifications, etc.</h4>
+
+    <div class="columns">
+      <div class="column is-one-third">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="http://bulma.io/images/placeholders/1280x960.png" alt="Image">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-left">
+                <figure class="image" style="height: 40px; width: 40px;">
+                  <img src="http://bulma.io/images/placeholders/96x96.png" alt="Image">
+                </figure>
+              </div>
+              <div class="media-content">
+                <p class="title is-4">Card</p>
+                <p class="subtitle is-6">Subtitle</p>
+              </div>
+            </div>
+
+            <div class="content">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris. <a href="#">@bulmaio</a>. <a href="#">#css</a> <a href="#">#responsive</a>
+              <br>
+              <small>11:09 PM - 1 Jan 2016</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <p class="title">Title</p>
+        <p class="subtitle">Subtitle</p>
+        <div class="control is-grouped">
+          <p class="control">
+            <span class="select">
+              <select>
+                <option>Dropdown</option>
+              </select>
+            </span>
+          </p>
+          <p class="control is-expanded">
+            <input class="input" type="text" placeholder="Text input">
+          </p>
+        </div>
+        <p class="control">
+          <label class="checkbox">
+            <input type="checkbox">
+            Checkbox
+          </label>
+        </p>
+        <p class="control">
+          <label class="radio">
+            <input type="radio" name="question">
+            Radio
+          </label>
+          <label class="radio">
+            <input type="radio" name="question">
+            Buttons
+          </label>
+        </p>
+        <p class="control">
+          <button class="button is-primary">Button</button>
+        </p>
+        <div class="tabs is-boxed">
+          <ul>
+            <li class="is-active">
+              <a>
+                <span class="icon is-small"><i class="fa fa-inbox"></i></span>
+                <span>Inbox</span>
+              </a>
+            </li>
+            <li>
+              <a>
+                <span class="icon is-small"><i class="fa fa-user"></i></span>
+                <span>Profile</span>
+              </a>
+            </li>
+            <li>
+              <a>
+                <span class="icon is-small"><i class="fa fa-comments-o"></i></span>
+                <span>Comments</span>
+              </a>
+            </li>
+            <li>
+              <a>
+                <span class="icon is-small"><i class="fa fa-cog"></i></span>
+                <span>Settings</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <p class="block">
+          <span class="tag is-dark">Tag<button class="delete is-small"></button></span>
+          <span class="tag is-info">Two<button class="delete is-small"></button></span>
+          <span class="tag is-danger">Three<button class="delete is-small"></button></span>
+        </p>
+        <div class="message is-warning">
+          <div class="message-header">
+            Hello world
+          </div>
+          <div class="message-body">
+            Message
+          </div>
+        </div>
+        <div class="notification is-success">
+          <button class="delete"></button>
+          Success!
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="footer">
+  <p><strong>Robot Disco</strong> is a <strong>modern</strong> CSS framework based on <a href="https://github.com/connectivedx/fuzzy-chainsaw"><strong>Fuzzy Chainsaw</strong></a></p>
+</footer>
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+  (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+  function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+  e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+  e.src='https://www.google-analytics.com/analytics.js';
+  r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+  ga('create','UA-XXXXX-X');ga('send','pageview');
+</script>
+
+<!-- build:js scripts/vendor.js -->
+<!-- bower:js -->
+<script src="/bower_components/jquery/dist/jquery.js"></script>
+<script src="/bower_components/modernizr/modernizr.js"></script>
+<script src="/bower_components/highlightjs/highlight.pack.js"></script>
+<script src="/bower_components/handlebars/handlebars.runtime.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+<!-- build:js scripts/main.js -->
+<script src="templates/templates.js"></script>
+<script src="scripts/main.js"></script>
+<!-- endbuild -->
+<script>hljs.initHighlightingOnLoad();</script>
+<script>
+  var context = {title: "My New Post", body: "This is my first post!"};
+  var html = MyApp.templates.index(context);
+</script>
+</body>
+</html>
